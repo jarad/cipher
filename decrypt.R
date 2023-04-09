@@ -1,0 +1,7 @@
+decrypt <- function(message, cipher) {
+  message <- toupper(message)
+  message <- strsplit(message,  "")[[1]]
+  message <- factor(message, levels = cipher$code)
+  message <- cipher$letter[as.numeric(message)]
+  paste0(message, collapse = "")
+}
