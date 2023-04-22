@@ -4,7 +4,7 @@ create_cipher <- function(seed = NULL) {
   }
   
   data.frame(
-    letter = c(LETTERS, " "),
-    code = c(LETTERS[sample.int(26)], " ")
+    letter = c(LETTERS, " ", ",", "."),
+    code = c(LETTERS[sample.int(26)], " ", ",", ".")
   )
 }
